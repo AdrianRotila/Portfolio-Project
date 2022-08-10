@@ -8,30 +8,30 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <!-- Header Content-->
+    <!-- Navigation Bar-->
     <header>
-        <nav>
-            <ul>
-                <li><span>Adrian</span>Rotila</a></li>
+        <nav class="nav-bar">
+            <p class="nav_bar_name">Adrian<span class="nav_bar_last_name">Rotila</span></p> 
+            <ul class="nav_bar_links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Projects</a></li>
-                <li><button>Get in Touch</button></li>
+                <li><button class="nav_bar_button">Get in Touch</button></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Content-->
-    <main>
-        <div>
-            <h3>Hey! I'm Adrian Rotila 👋</h3>
-            <h1>A Junior Software Developer based in the UK.</h1>
-            <button>Take a look at my work ⤵</button>
+    <div class="main_content">
+        <div class="main_content_description">
+            <h4 class="main_content_description_introduction">Hey! I'm Adrian Rotila 👋</h4>
+            <h1 class="main_content_description_title">A Junior Software Developer based in the UK.</h1>
+            <button class="main_content_description_button">Take a look at my work  ⤵</button>
         </div>
-        <div>
+        <div class="main_content_skills">
             <h4>Technical Skills</h4>
             <h6>Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</h6>
-            <ul>
+            <ul class="main_content_logos">
                 <li>
                     <img src="./images/git.svg" alt="git_image">
                     <h6>GIT</h6>
@@ -57,25 +57,63 @@
                     <h6>BEM</h6>
                 </li>
                 <li>
-                    <img src="./images/react-2.svg" alt="react_image">
+                    <img src="./images/react.svg" alt="react_image">
                     <h6>React</h6>
                 </li>
                 <li>
-                    <img src="./images/java-14.svg" alt="java_image">
+                    <img src="./images/java.svg" alt="java_image">
                     <h6>Java</h6>
                 </li>
                 <li>
-                    <img src="./images/spring-3.svg" alt="springboot_image">
+                    <img src="./images/spring.svg" alt="springboot_image">
                     <h6>Spring Boot</h6>
                 </li>
             </ul>
+            <h4>My Projects</h4>
         </div>
-       
-    </main>
 
-    
+    <!-- Project Section -->
+        <div>
+            <div>
+                <div>This is a rectangle</div>
+                <p>REACT</p>
+                <h4>Client Project</h4>
+                <p>Maecenas accumsan tincidunt id et in ut diam sit. Metus,
+                nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
+                <div>
+                    <a href="#">Code</a>
+                    <a href="#">Preview</a>
+                </div>
+            </div>
+        </div>
+
+    <!-- About Me Section -->
+
+        <div>
+            <div>
+                <h3>About Me</h3>
+                <p>Nulla ac praesent tempor, orci sit nunc eget. Aliquam urna nunc, 
+                    viverra sed tortor non. Id at pellentesque mauris at tincidunt 
+                    venenatis urna mus. Sodales pretium tempus tincidunt tellus in imperdiet. 
+                    Integer fames maecenas amet, consequat. Et cursus gravida enim lorem urna, 
+                    vivamus pulvinar porttitor. Ultrices neque nec feugiat ullamcorper ultricies 
+                    ante sagittis commodo. 
+                        
+                    Nunc malesuada amet at eget consectetur sit. Nibh in ut diam nulla sed porttitor et. 
+                    At neque tellus convallis urna, sodales neque. In enim auctor diam nunc duis rutrum 
+                    adipiscing pellentesque eu. In sollicitudin neque dictum neque proin pretium ante. 
+                    Ac bibendum vestibulum ullamcorper pellentesque scelerisque. Neque senectus eu dictum 
+                    ultricies tellus nisl eget sem libero. Eu sit quis vestibulum donec cras elementum.</p>
+            </div>
+            <img width="488.74px" height="488.74px" src="./images/profile_picture.jpg" alt="profile_picture">
+        </div>
+    </div>
+
+<!-- My detalis Section-->
     <footer>
-        
+        <p>adrianrotila@gmail.com</p>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
     </footer>
 </body>
 </html>

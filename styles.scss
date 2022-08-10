@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+$color-primary: #A3E1DE;
+$color-secondary: #8C9CB1;
+$text-color: #272643;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navigation Bar Styling */
+
+
+.nav-bar {
+    padding: 40px 154px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    .nav_bar_name {
+        font-size: 20px;
+    
+        .nav_bar_last_name {
+            font-weight: bold;
+        }
+    }
+    
+    .nav_bar_links {
+        width: 40%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+            
+        a {
+            text-decoration: none;
+            font-size: 18px;
+        }
+    
+        .nav_bar_button{
+            font-size: 16px;
+        }
+    }
+}
+
+/* Main Text Styling */
+
+.main_content {
+    padding-top: 104px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .main_content_description {
+        width: 95%;
+        height: 862px;
+        background-color: #F7FAFA;
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+ 
+        .main_content_description_introduction {
+            color: $color-secondary;
+            font-size: 32px;
+        }
+        .main_content_description_title {
+            color: $text-color;
+            font-size: 80px;
+            width: 1108px;
+            height: 192px;
+            text-align: center;
+        }
+        .main_content_description_button {
+            background: $color-primary;
+            border: none;
+            box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.74);
+            border-radius: 7px; 
+            font-size: 18px;
+            font-weight: bold;
+            width: 321px;
+            height: 78px;
+            left: 699px;
+            top: 690px;
+        }
+    }
+
+    .main_content_skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .main_content_logos {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            list-style: none;
+        }
+    }
+}
+
+
+    
+
