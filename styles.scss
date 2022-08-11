@@ -14,13 +14,13 @@ $text-color: #272643;
 /* Navigation Bar Styling */
 
 
-.nav-bar {
+.nav_bar {
     padding: 40px 154px;
     background-color: white;
     position: fixed;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     
     .nav_bar_name {
@@ -35,15 +35,25 @@ $text-color: #272643;
         width: 40%;
         list-style: none;
         display: flex;
+        align-items: center;
         justify-content: space-between;
             
         a {
             text-decoration: none;
             font-size: 18px;
+            color: $color-secondary;
         }
     
         .nav_bar_button{
             font-size: 16px;
+            font-weight: bold;
+            width: 145px;
+            height: 45px;
+            left: 1429px;
+            top: 47px;
+            background: #BAE8E8;
+            border: 1px solid $text-color;
+            border-radius: 10px;
         }
     }
 }
@@ -51,10 +61,10 @@ $text-color: #272643;
 /* Main Text Styling */
 
 .main_content {
-    padding-top: 104px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 96px;
 
     .main_content_description {
         width: 95%;
@@ -93,15 +103,45 @@ $text-color: #272643;
     }
 
     .main_content_skills {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 60px;
+        margin-top: 146px;
+
+        .main_cotent_skills_headline {
+            font-size: 32px;
+            background-image: linear-gradient(181deg, $color-primary 0%, $color-primary 50%, transparent 54%, transparent 100%);
+            background-size: 100% 35%;
+            background-repeat: repeat-x;
+            background-position: left 0% bottom 0%;
+        }   
+
+        .main_content_skills_description {
+            color: $color-secondary;
+            font-size: 16px;
+            width: 484px;
+            height: 52px;
+            text-align: center;
+            line-height: 160%;
+            font-weight: 400;    
+        }
+    
 
         .main_content_logos {
+            width: 75%;
             display: flex;
-            text-align: center;
-            align-items: center;
+            justify-content: space-between;
             list-style: none;
+
+            .main_content_logos-items {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-between;
+                
+            }
         }
     }
 }
