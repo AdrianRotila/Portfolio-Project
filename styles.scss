@@ -11,40 +11,43 @@ $text-color: #272643;
     font-family: 'Inter', sans-serif;
 }
 
-/* Navigation Bar Styling */
+/* Navigation Bar */
 
-
-.nav_bar {
-    padding: 40px 154px;
+.header { 
     background-color: white;
     position: fixed;
-    width: 100%;
+    width: 100vw;
+    height: 96px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     
-    .nav_bar_name {
+    
+    &__name {
         font-size: 20px;
+        color: $text-color;
+        margin-left: 10vw;
     
-        .nav_bar_last_name {
+        &--last {
             font-weight: bold;
         }
     }
     
-    .nav_bar_links {
-        width: 40%;
+    &__list {
+        width: 40vw;
+        margin-right: 10vw;
         list-style: none;
         display: flex;
         align-items: center;
         justify-content: space-between;
             
-        a {
+        &--item {
             text-decoration: none;
             font-size: 18px;
             color: $color-secondary;
         }
     
-        .nav_bar_button{
+        &--button{
             font-size: 16px;
             font-weight: bold;
             width: 145px;
@@ -84,8 +87,8 @@ $text-color: #272643;
         .main_content_description_title {
             color: $text-color;
             font-size: 80px;
-            width: 1108px;
-            height: 192px;
+            width: 60vw;
+           
             text-align: center;
         }
         .main_content_description_button {
@@ -112,6 +115,7 @@ $text-color: #272643;
 
         .main_cotent_skills_headline {
             font-size: 32px;
+            color: $text-color;
             background-image: linear-gradient(181deg, $color-primary 0%, $color-primary 50%, transparent 54%, transparent 100%);
             background-size: 100% 35%;
             background-repeat: repeat-x;
@@ -140,12 +144,75 @@ $text-color: #272643;
                 align-items: center;
                 flex-direction: column;
                 justify-content: space-between;
-                
+            }
+        }
+
+        .main_content_skills_projects-title {
+            margin-top: 200px;
+            margin-bottom: 110px;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 39px;
+            color: $text-color;
+            background-image: linear-gradient(181deg, $color-primary 0%, $color-primary 50%, transparent 54%, transparent 100%);
+            background-size: 100% 35%;
+            background-repeat: repeat-x;
+            background-position: left 0% bottom 0%;
+        }
+
+    }
+
+    .cards {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        row-gap: 80px;
+    
+        .card {
+            width: 440px;
+            height: 590px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            .card_img{
+                width: 440px;
+                height: 326px;
+                background-color: #E3F6F5
+            }
+            .card_tech{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                color: #BAE8E8;
+            }
+            .card_title {
+                margin-top: -25px;
+                font-weight: 600;
+                font-size: 38px;
+                line-height: 46px;
+                color:$text-color;
+            }
+            .card_description{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 160%;
+                color: $color-secondary;
+            }
+            .card_links {
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 160%;
+                .card_link {
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: $color-secondary;
+                }
             }
         }
     }
 }
-
-
-    
-

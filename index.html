@@ -9,20 +9,18 @@
 </head>
 <body>
     <!-- Navigation Bar-->
-    <header>
-        <nav class="nav_bar">
-            <p class="nav_bar_name">Adrian<span class="nav_bar_last_name">Rotila</span></p> 
-            <ul class="nav_bar_links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><button class="nav_bar_button">Get in Touch</button></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <p class="header__name">Adrian<span class="header__name--last">Rotila</span></p> 
+        <ul class="header__list">
+            <li><a class="header__list--item" href="#">Home</a></li>
+            <li><a class="header__list--item" href="#">About</a></li>
+            <li><a class="header__list--item" href="#">Projects</a></li>
+            <li><button class="header__list--button">Get in Touch</button></li>
+        </ul>
     </header>
 
     <!-- Main Content-->
-    <div class="main_content">
+    <main class="main_content">
         <div class="main_content_description">
             <h4 class="main_content_description_introduction">Hey! I'm Adrian Rotila 👋</h4>
             <h1 class="main_content_description_title">A Junior Software Developer based in the UK.</h1>
@@ -30,7 +28,6 @@
         </div>
         <div class="main_content_skills">
             <h4 class="main_cotent_skills_headline">Technical Skills</h4>
-            <span class="underline"></span>
             <h6 class="main_content_skills_description">Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</h6>
             <ul class="main_content_logos">
                 <li class="main_content_logos-items">
@@ -70,22 +67,78 @@
                     <h6 class="main_content_logos-text">Spring Boot</h6>
                 </li>
             </ul>
-            <h4>My Projects</h4>
+            <h4 class="main_content_skills_projects-title">My Projects</h4>
         </div>
 
     <!-- Project Section -->
-        <div>
-            <div>
-                <div>This is a rectangle</div>
-                <p>REACT</p>
-                <h4>Client Project</h4>
-                <p>Maecenas accumsan tincidunt id et in ut diam sit. Metus,
+        <div class="cards">
+            <div class="card">
+                <div class="card_img">This is a rectangle</div>
+                <p class="card_tech">REACT</p>
+                <h4 class="card_title">Client Project</h4>
+                <p class="card_description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
                 nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
-                <div>
-                    <a href="#">Code</a>
-                    <a href="#">Preview</a>
+                <div class="card_links">
+                    <a class="card_link" href="#">Code < / ></a>
+                    <a class="card_link" href="#">Preview 👁</a>
                 </div>
             </div>
+            <div class="card">
+                <div class="card_img">This is a rectangle</div>
+                <p class="card_tech">REACT</p>
+                <h4 class="card_title">Client Project</h4>
+                <p class="card_description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
+                nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
+                <div class="card_links">
+                    <a class="card_link" href="#">Code</a>
+                    <a class="card_link" href="#">Preview 👁</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_img">This is a rectangle</div>
+                <p class="card_tech">REACT</p>
+                <h4 class="card_title">Client Project</h4>
+                <p class="card_description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
+                nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
+                <div class="card_links">
+                    <a class="card_link" href="#">Code </></a>
+                    <a class="card_link" href="#">Preview 👁</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_img">This is a rectangle</div>
+                <p class="card_tech">REACT</p>
+                <h4 class="card_title">Client Project</h4>
+                <p class="card_description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
+                nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
+                <div class="card_links">
+                    <a class="card_link" href="#">Code </></a>
+                    <a class="card_link" href="#">Preview 👁</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_img">This is a rectangle</div>
+                <p class="card_tech">REACT</p>
+                <h4 class="card_title">Client Project</h4>
+                <p class="card_description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
+                nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
+                <div class="card_links">
+                    <a class="card_link" href="#">Code </></a>
+                    <a class="card_link" href="#">Preview 👁</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_img">This is a rectangle</div>
+                <p class="card_tech">REACT</p>
+                <h4 class="card_title">Client Project</h4>
+                <p class="card_description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
+                nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
+                <div class="card_links">
+                    <a class="card_link" href="#">Code </></a>
+                    <a class="card_link" href="#">Preview 👁</a>
+                </div>
+            </div>
+            
         </div>
 
     <!-- About Me Section -->
@@ -108,7 +161,7 @@
             </div>
             <img width="488.74px" height="488.74px" src="./images/profile_picture.jpg" alt="profile_picture">
         </div>
-    </div>
+    </main>
 
 <!-- My detalis Section-->
     <footer>
