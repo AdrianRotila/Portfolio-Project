@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
-$color-primary: #A3E1DE;
-$color-secondary: #8C9CB1;
-$text-color: #272643;
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+
+$color-primary: #A3E1DE;
+$color-secondary: #8C9CB1;
+$text-color: #272643;
+
+
 
 /* Navigation Bar */
 
@@ -63,13 +65,13 @@ $text-color: #272643;
 
 /* Main Text Styling */
 
-.main_content {
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 96px;
 
-    .main_content_description {
+    &__headline {
         width: 95%;
         height: 862px;
         background-color: #F7FAFA;
@@ -79,33 +81,33 @@ $text-color: #272643;
         justify-content: center;
         align-items: center;
         
- 
-        .main_content_description_introduction {
-            color: $color-secondary;
+        &--introduction {
             font-size: 32px;
+            color: $color-secondary;
         }
-        .main_content_description_title {
-            color: $text-color;
+
+        &--title {
             font-size: 80px;
-            width: 60vw;
-           
+            width: 75vw;
             text-align: center;
+            color: $text-color;
         }
-        .main_content_description_button {
-            background: $color-primary;
-            border: none;
-            box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.74);
-            border-radius: 7px; 
-            font-size: 18px;
-            font-weight: bold;
+
+        &--button {
             width: 321px;
             height: 78px;
             left: 699px;
             top: 690px;
+            font-size: 18px;
+            background: $color-primary;
+            border: none;
+            font-weight: bold;
+            box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.74);
+            border-radius: 7px; 
         }
     }
 
-    .main_content_skills {
+    &__skills {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -113,16 +115,17 @@ $text-color: #272643;
         gap: 60px;
         margin-top: 146px;
 
-        .main_cotent_skills_headline {
+        &--title {
             font-size: 32px;
             color: $text-color;
             background-image: linear-gradient(181deg, $color-primary 0%, $color-primary 50%, transparent 54%, transparent 100%);
             background-size: 100% 35%;
             background-repeat: repeat-x;
             background-position: left 0% bottom 0%;
+            text-align: center;
         }   
 
-        .main_content_skills_description {
+        &--description {
             color: $color-secondary;
             font-size: 16px;
             width: 484px;
@@ -133,13 +136,13 @@ $text-color: #272643;
         }
     
 
-        .main_content_logos {
+        &__logos {
             width: 75%;
             display: flex;
             justify-content: space-between;
             list-style: none;
 
-            .main_content_logos-items {
+            &--items {
                 display: flex;
                 align-items: center;
                 flex-direction: column;
@@ -147,7 +150,7 @@ $text-color: #272643;
             }
         }
 
-        .main_content_skills_projects-title {
+        &--projects {
             margin-top: 200px;
             margin-bottom: 110px;
             font-weight: bold;
@@ -162,57 +165,130 @@ $text-color: #272643;
 
     }
 
-    .cards {
+    .project {
         width: 90%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between; 
+        align-items: center;
         row-gap: 80px;
     
-        .card {
+        &__card {
             width: 440px;
             height: 590px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             
-            .card_img{
+            &--image{
                 width: 440px;
                 height: 326px;
                 background-color: #E3F6F5
             }
-            .card_tech{
+            
+            &--tech{
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 19px;
                 color: #BAE8E8;
             }
-            .card_title {
+
+            &--title {
                 margin-top: -25px;
                 font-weight: 600;
                 font-size: 38px;
                 line-height: 46px;
                 color:$text-color;
             }
-            .card_description{
+
+            &--description{
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 160%;
                 color: $color-secondary;
             }
-            .card_links {
+
+            &__links {
                 width: 50%;
                 display: flex;
                 justify-content: space-between;
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 160%;
-                .card_link {
+
+                &--item {
                     text-decoration: none;
                     font-size: 18px;
-                    color: $color-secondary;
+                    color: $text-color;
                 }
             }
         }
     }
+
+/* About Section */
+    .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80vw;
+        margin: 180px;
+
+        &__text {
+            width: 40vw;
+
+            &--title {
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 58px;
+                margin: 52px 0;
+            }
+
+            &--description {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 180%;
+                color: $color-secondary;
+            }
+        }
+
+        &__image {
+            border-radius: 50%;
+        }
+    } 
 }
+
+.footer {
+    background-color: $text-color;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &--email {
+        color: white;
+        margin-left: 10vw;
+
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin-right: 10vw;
+        gap: 30px;
+        
+
+        &--link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: $color-primary;
+        }
+    }
+}
+

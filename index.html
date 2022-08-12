@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Project</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
     <!-- Navigation Bar-->
     <header class="header">
-        <p class="header__name">Adrian<span class="header__name--last">Rotila</span></p> 
+        <p class="header__name"> Adrian<span class="header__name--last">Rotila</span></p> 
         <ul class="header__list">
             <li><a class="header__list--item" href="#">Home</a></li>
             <li><a class="header__list--item" href="#">About</a></li>
@@ -20,154 +20,149 @@
     </header>
 
     <!-- Main Content-->
-    <main class="main_content">
-        <div class="main_content_description">
-            <h4 class="main_content_description_introduction">Hey! I'm Adrian Rotila 👋</h4>
-            <h1 class="main_content_description_title">A Junior Software Developer based in the UK.</h1>
-            <button class="main_content_description_button">Take a look at my work  ⤵</button>
+    <main class="main">
+        <div class="main__headline">
+            <h4 class="main__headline--introduction">Hey! I'm Adrian Rotila 👋</h4>
+            <h1 class="main__headline--title">A Junior Software Developer based in the UK</h1>
+            <button class="main__headline--button">Take a look at my work  ⤵</button>
         </div>
-        <div class="main_content_skills">
-            <h4 class="main_cotent_skills_headline">Technical Skills</h4>
-            <h6 class="main_content_skills_description">Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</h6>
-            <ul class="main_content_logos">
-                <li class="main_content_logos-items">
+        <div class="main__skills">
+            <h4 class="main__skills--title">Technical Skills</h4>
+            <h6 class="main__skills--description">Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</h6>
+            <ul class="main__skills__logos">
+                <li class="main__skills__logos--items">
                     <img src="./images/git.svg" alt="git_image">
                     <h6>GIT</h6>
                 </li>
-                <li class="main_content_logos-items">
-                    <img class="main_content_logos-img" src="./images/html5.svg" alt="html5_image">
-                    <h6 class="main_content_logos-text">HTML5</h6>
+                <li class="main__skills__logos--items">
+                    <img src="./images/html5.svg" alt="html5_image">
+                    <h6>HTML5</h6>
+                </li>
+                <li class="main__skills__logos--items">
+                    <img src="./images/css.svg" alt="css3_image">
+                    <h6>CSS3</h6>
+                </li>
+                <li class="main__skills__logos--items">
+                    <img src="./images/javascript.svg" alt="javascript_image">
+                    <h6>Javascript</h6>
+                </li>
+                <li class="main__skills__logos--items">
+                    <img src="./images/sass.svg" alt="scss_image">
+                    <h6>SCSS</h6>
+                </li>
+                <li class="main__skills__logos--items">
+                    <img src="./images/bem.svg" alt="bem.svg_image">
+                    <h6>BEM</h6>
+                </li>
+                <li class="main__skills__logos--items">
+                    <img src="./images/react.svg" alt="react_image">
+                    <h6>React</h6>
+                </li>
+                <li class="main__skills__logos--items">
+                    <img src="./images/java.svg" alt="java_image">
+                    <h6>Java</h6>
                 </li>
                 <li class="main_content_logos-items">
-                    <img class="main_content_logos-img" src="./images/css.svg" alt="css3_image">
-                    <h6 class="main_content_logos-text">CSS3</h6>
-                </li>
-                <li class="main_content_logos-items">
-                    <img class="main_content_logos-img" src="./images/javascript.svg" alt="javascript_image">
-                    <h6 class="main_content_logos-text">Javascript</h6>
-                </li>
-                <li class="main_content_logos-items">
-                    <img class="main_content_logos-img" src="./images/sass.svg" alt="scss_image">
-                    <h6 class="main_content_logos-text">SCSS</h6>
-                </li>
-                <li class="main_content_logos-items">
-                    <img class="main_content_logos-img" src="./images/bem.svg" alt="bem.svg_image">
-                    <h6 class="main_content_logos-text">BEM</h6>
-                </li>
-                <li class="main_content_logos-items">
-                    <img class="main_content_logos-img" src="./images/react.svg" alt="react_image">
-                    <h6 class="main_content_logos-text">React</h6>
-                </li>
-                <li class="main_content_logos-items">
-                    <img class="main_content_logos-img" src="./images/java.svg" alt="java_image">
-                    <h6 class="main_content_logos-text">Java</h6>
-                </li>
-                <li class="main_content_logos-items">
-                    <img class="main_content_logos-img" src="./images/spring.svg" alt="springboot_image">
-                    <h6 class="main_content_logos-text">Spring Boot</h6>
+                    <img src="./images/spring.svg" alt="springboot_image">
+                    <h6>Spring Boot</h6>
                 </li>
             </ul>
-            <h4 class="main_content_skills_projects-title">My Projects</h4>
+            <h4 class="main__skills--projects">My Projects</h4>
         </div>
 
     <!-- Project Section -->
-        <div class="cards">
-            <div class="card">
-                <div class="card_img">This is a rectangle</div>
-                <p class="card_tech">REACT</p>
-                <h4 class="card_title">Client Project</h4>
-                <p class="card_description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
+        <div class="project">
+            <div class="project__card">
+                <div class="project__card--image"></div>
+                <p class="project__card--tech">REACT</p>
+                <h4 class="project__card--title">Client Project</h4>
+                <p class="project__card--description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
                 nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
-                <div class="card_links">
-                    <a class="card_link" href="#">Code < / ></a>
-                    <a class="card_link" href="#">Preview 👁</a>
+                <div class="project__card__links">
+                    <a class="project__card__links--item" href="#">Code < / ></a>
+                    <a class="project__card__links--item" href="#">Preview 👀</a>
                 </div>
             </div>
-            <div class="card">
-                <div class="card_img">This is a rectangle</div>
-                <p class="card_tech">REACT</p>
-                <h4 class="card_title">Client Project</h4>
-                <p class="card_description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
+            <div class="project__card">
+                <div class="project__card--image"></div>
+                <p class="project__card--tech">REACT</p>
+                <h4 class="project__card--title">Client Project</h4>
+                <p class="project__card--description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
                 nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
-                <div class="card_links">
-                    <a class="card_link" href="#">Code</a>
-                    <a class="card_link" href="#">Preview 👁</a>
+                <div class="project__card__links">
+                    <a class="project__card__links--item" href="#">Code < / ></a>
+                    <a class="project__card__links--item" href="#">Preview 👀</a>
                 </div>
             </div>
-            <div class="card">
-                <div class="card_img">This is a rectangle</div>
-                <p class="card_tech">REACT</p>
-                <h4 class="card_title">Client Project</h4>
-                <p class="card_description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
+            <div class="project__card">
+                <div class="project__card--image"></div>
+                <p class="project__card--tech">REACT</p>
+                <h4 class="project__card--title">Client Project</h4>
+                <p class="project__card--description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
                 nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
-                <div class="card_links">
-                    <a class="card_link" href="#">Code </></a>
-                    <a class="card_link" href="#">Preview 👁</a>
+                <div class="project__card__links">
+                    <a class="project__card__links--item" href="#">Code < / ></a>
+                    <a class="project__card__links--item" href="#">Preview 👀</a>
                 </div>
             </div>
-            <div class="card">
-                <div class="card_img">This is a rectangle</div>
-                <p class="card_tech">REACT</p>
-                <h4 class="card_title">Client Project</h4>
-                <p class="card_description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
+            <div class="project__card">
+                <div class="project__card--image"></div>
+                <p class="project__card--tech">REACT</p>
+                <h4 class="project__card--title">Client Project</h4>
+                <p class="project__card--description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
                 nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
-                <div class="card_links">
-                    <a class="card_link" href="#">Code </></a>
-                    <a class="card_link" href="#">Preview 👁</a>
+                <div class="project__card__links">
+                    <a class="project__card__links--item" href="#">Code < / ></a>
+                    <a class="project__card__links--item" href="#">Preview 👀</a>
                 </div>
             </div>
-            <div class="card">
-                <div class="card_img">This is a rectangle</div>
-                <p class="card_tech">REACT</p>
-                <h4 class="card_title">Client Project</h4>
-                <p class="card_description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
+            <div class="project__card">
+                <div class="project__card--image"></div>
+                <p class="project__card--tech">REACT</p>
+                <h4 class="project__card--title">Client Project</h4>
+                <p class="project__card--description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
                 nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
-                <div class="card_links">
-                    <a class="card_link" href="#">Code </></a>
-                    <a class="card_link" href="#">Preview 👁</a>
+                <div class="project__card__links">
+                    <a class="project__card__links--item" href="#">Code < / ></a>
+                    <a class="project__card__links--item" href="#">Preview 👀</a>
                 </div>
             </div>
-            <div class="card">
-                <div class="card_img">This is a rectangle</div>
-                <p class="card_tech">REACT</p>
-                <h4 class="card_title">Client Project</h4>
-                <p class="card_description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
+           <div class="project__card">
+                <div class="project__card--image"></div>
+                <p class="project__card--tech">REACT</p>
+                <h4 class="project__card--title">Client Project</h4>
+                <p class="project__card--description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
                 nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
-                <div class="card_links">
-                    <a class="card_link" href="#">Code </></a>
-                    <a class="card_link" href="#">Preview 👁</a>
+                <div class="project__card__links">
+                    <a class="project__card__links--item" href="#">Code < / ></a>
+                    <a class="project__card__links--item" href="#">Preview 👀</a>
                 </div>
             </div>
-            
         </div>
 
     <!-- About Me Section -->
 
-        <div>
-            <div>
-                <h3>About Me</h3>
-                <p>Nulla ac praesent tempor, orci sit nunc eget. Aliquam urna nunc, 
+        <div class="about">
+            <img class="about__image" width="488.74px" height="488.74px" src="./images/profile_picture.jpg" alt="profile_picture">
+            <div class="about__text">
+                <h3 class="about__text--title">About Me</h3>
+                <p class="about__text--description">Nulla ac praesent tempor, orci sit nunc eget. Aliquam urna nunc, 
                     viverra sed tortor non. Id at pellentesque mauris at tincidunt 
                     venenatis urna mus. Sodales pretium tempus tincidunt tellus in imperdiet. 
                     Integer fames maecenas amet, consequat. Et cursus gravida enim lorem urna, 
                     vivamus pulvinar porttitor. Ultrices neque nec feugiat ullamcorper ultricies 
-                    ante sagittis commodo. 
-                        
-                    Nunc malesuada amet at eget consectetur sit. Nibh in ut diam nulla sed porttitor et. 
-                    At neque tellus convallis urna, sodales neque. In enim auctor diam nunc duis rutrum 
-                    adipiscing pellentesque eu. In sollicitudin neque dictum neque proin pretium ante. 
-                    Ac bibendum vestibulum ullamcorper pellentesque scelerisque. Neque senectus eu dictum 
-                    ultricies tellus nisl eget sem libero. Eu sit quis vestibulum donec cras elementum.</p>
+                    ante sagittis commodo. </p>
             </div>
-            <img width="488.74px" height="488.74px" src="./images/profile_picture.jpg" alt="profile_picture">
         </div>
     </main>
 
 <!-- My detalis Section-->
-    <footer>
-        <p>adrianrotila@gmail.com</p>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
+    <footer class="footer">
+        <p class="footer--email">adrianrotila@gmail.com</p>
+        <ul class="footer__list">
+            <li class="footer__list--link"><img src="./images/github.svg" alt=""></li>
+            <li class="footer__list--link"><img src="./images/linkedin.svg" alt=""></li>
+        </ul>
     </footer>
 </body>
 </html>
