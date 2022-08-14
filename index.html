@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Project</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!-- Navigation Bar-->
     <header class="header">
-        <p class="header__name"> Adrian<span class="header__name--last">Rotila</span></p> 
+        <p class="header__name">Adrian<span class="header__name--last">Rotila</span></p> 
         <ul class="header__list">
+            <li><button class="header__list--group"><img src="./images/menu.svg" alt=""></button></li>
             <li><a class="header__list--item" href="#">Home</a></li>
             <li><a class="header__list--item" href="#">About</a></li>
             <li><a class="header__list--item" href="#">Projects</a></li>
@@ -23,7 +25,7 @@
     <main class="main">
         <div class="main__headline">
             <h4 class="main__headline--introduction">Hey! I'm Adrian Rotila 👋</h4>
-            <h1 class="main__headline--title">A Junior Software Developer based in the UK</h1>
+            <h1 class="main__headline--title">A Junior <span class="main__headline--title--underline">Software Developer</span> based in the UK</h1>
             <button class="main__headline--button">Take a look at my work  ⤵</button>
         </div>
         <div class="main__skills">
@@ -62,7 +64,7 @@
                     <img src="./images/java.svg" alt="java_image">
                     <h6>Java</h6>
                 </li>
-                <li class="main_content_logos-items">
+                <li class="main__skills__logos--items">
                     <img src="./images/spring.svg" alt="springboot_image">
                     <h6>Spring Boot</h6>
                 </li>
@@ -85,8 +87,19 @@
             </div>
             <div class="project__card">
                 <div class="project__card--image"></div>
+                <p class="project__card--tech">JAVA, SPRING BOOT</p>
+                <h4 class="project__card--title">REST API</h4>
+                <p class="project__card--description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
+                nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
+                <div class="project__card__links">
+                    <a class="project__card__links--item" href="#">Code < / ></a>
+                    <a class="project__card__links--item" href="#">Preview 👀</a>
+                </div>
+            </div>
+            <div class="project__card">
+                <div class="project__card--image"></div>
                 <p class="project__card--tech">REACT</p>
-                <h4 class="project__card--title">Client Project</h4>
+                <h4 class="project__card--title">Punk API</h4>
                 <p class="project__card--description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
                 nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
                 <div class="project__card__links">
@@ -108,18 +121,7 @@
             <div class="project__card">
                 <div class="project__card--image"></div>
                 <p class="project__card--tech">REACT</p>
-                <h4 class="project__card--title">Client Project</h4>
-                <p class="project__card--description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
-                nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
-                <div class="project__card__links">
-                    <a class="project__card__links--item" href="#">Code < / ></a>
-                    <a class="project__card__links--item" href="#">Preview 👀</a>
-                </div>
-            </div>
-            <div class="project__card">
-                <div class="project__card--image"></div>
-                <p class="project__card--tech">REACT</p>
-                <h4 class="project__card--title">Client Project</h4>
+                <h4 class="project__card--title">REST API</h4>
                 <p class="project__card--description">Maecenas accumsan tincidunt id et in ut diam sit. Metus,
                 nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
                 <div class="project__card__links">
@@ -151,7 +153,12 @@
                     venenatis urna mus. Sodales pretium tempus tincidunt tellus in imperdiet. 
                     Integer fames maecenas amet, consequat. Et cursus gravida enim lorem urna, 
                     vivamus pulvinar porttitor. Ultrices neque nec feugiat ullamcorper ultricies 
-                    ante sagittis commodo. </p>
+                    ante sagittis commodo. 
+                
+                    Nulla ac praesent tempor, orci sit nunc eget. Aliquam urna nunc, viverra sed tortor non. 
+                    Id at pellentesque mauris at tincidunt venenatis urna mus. Sodales pretium tempus tincidunt 
+                    tellus in imperdiet. Integer fames maecenas amet, consequat. Et cursus gravida enim lorem urna, 
+                    vivamus pulvinar porttitor. Ultrices neque nec feugiat ullamcorper ultricies ante sagittis commodo.</p>
             </div>
         </div>
     </main>
