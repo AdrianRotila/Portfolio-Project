@@ -10,16 +10,14 @@
 $color-primary: #A3E1DE;
 $color-secondary: #8C9CB1;
 $text-color: #272643;
-
-
+$color-white: white;
 
 /* Navigation Bar */
-
 .header { 
-    background-color: white;
-    position: fixed;
+    background-color: $color-white;
     width: 100%;
     height: 96px;
+    position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -65,14 +63,13 @@ $text-color: #272643;
     }
 }
 
-/* Main Text Styling */
-
+/* Main Text Section */
 .main {
+    padding-top: 96px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 96px;
 
     &__headline {
         min-width: 95%;
@@ -92,8 +89,12 @@ $text-color: #272643;
         &--title {
             font-size: 64px;
             width: 65vw;
-            text-align: center;
             color: $text-color;
+            text-align: center;
+        }
+
+        &--underline {
+            background: linear-gradient(180deg,rgba(255,255,255,0) 70%, #BAE8E8 50%);
         }
 
         &--button {
@@ -110,14 +111,15 @@ $text-color: #272643;
         }
     }
 
+/* Skills Section */
     &__skills {
         width: 100%;
+        gap: 60px;
+        margin-top: 146px;
         display: flex;
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
-        gap: 60px;
-        margin-top: 146px;
 
         &--title {
             font-size: 32px;
@@ -131,29 +133,9 @@ $text-color: #272643;
             font-size: 16px;
             width: 484px;
             height: 52px;
-            text-align: center;
             line-height: 160%;
             font-weight: 400;    
-        }
-    
-        &__logos {
-            width: 75%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 70px;
-            list-style: none;
-
-            &--items {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                justify-content: space-between;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 19px;
-                color: $color-secondary;
-            }
+            text-align: center;
         }
 
         &--projects {
@@ -164,19 +146,53 @@ $text-color: #272643;
             line-height: 39px;
             color: $text-color;
             background: linear-gradient(180deg,rgba(255,255,255,0) 70%, #BAE8E8 50%);
-            
         }
-
     }
 
+    &__logos {
+        width: 75%;
+        gap: 70px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &--items {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: $color-secondary;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}
+
+/* Projects Section */
     .project {
-        width: 90%;
+        width: 95%;
+        gap: 40px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center; 
         align-items: center;
-        row-gap: 80px;
-        column-gap: 40px;
+
+        &__links {
+            width: 50%;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 160%;
+            display: flex;
+            justify-content: space-between;
+            
+            &--item {
+                text-decoration: none;
+                font-size: 18px;
+                color: $text-color;
+            }
+        }
     
         &__card {
             width: 440px;
@@ -213,31 +229,17 @@ $text-color: #272643;
                 color: $color-secondary;
             }
 
-            &__links {
-                width: 50%;
-                display: flex;
-                justify-content: space-between;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 160%;
-
-                &--item {
-                    text-decoration: none;
-                    font-size: 18px;
-                    color: $text-color;
-                }
-            }
         }
     }
 
 /* About Section */
     .about {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 80vw;
         margin: 180px;
         column-gap: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         &__text {
             width: 757px;
@@ -259,11 +261,11 @@ $text-color: #272643;
 
         &__image {
             border-radius: 50%;
-            width: 40%;
-            height: 40%;
+            width: 35%;
+            height: 35%;
         }
     } 
-}
+
 
 .footer {
     background-color: $text-color;
@@ -280,20 +282,20 @@ $text-color: #272643;
     }
 
     &__list {
+        margin-right: 10vw;
+        gap: 30px;
         list-style: none;
         display: flex;
         flex-direction: row;
-        margin-right: 10vw;
-        gap: 30px;
         
         &--link {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             width: 45px;
             height: 45px;
             border-radius: 50%;
             background-color: $color-primary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
@@ -336,17 +338,21 @@ $text-color: #272643;
         }
     }
 
-    .main__headline--introduction {
-        font-size: 20px;
-    }
+    .main__headline {
+        padding: 37px;
+        align-items: flex-start;
 
-    .main__headline--title {
-        text-align: left;
-        width: auto;
-        margin-left: 20px;
-        
-        &--underline {
-            background: linear-gradient(180deg,rgba(255,255,255,0) 70%, #BAE8E8 50%);
+        &--introduction {
+            font-size: 20px;
+        }
+    
+        &--title {
+            text-align: left;
+            margin-bottom: 100px;
+        }
+
+        &--button {
+            align-self: center;
         }
     }
 }
