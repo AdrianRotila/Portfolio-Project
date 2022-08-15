@@ -75,8 +75,8 @@
   color: #8C9CB1;
 }
 .main__headline--title {
-  font-size: 80px;
-  width: 75vw;
+  font-size: 64px;
+  width: 65vw;
   text-align: center;
   color: #272643;
 }
@@ -285,8 +285,14 @@
     display: none;
   }
 
+  .main__headline--introduction {
+    font-size: 20px;
+  }
+
   .main__headline--title {
     text-align: left;
+    width: auto;
+    margin-left: 20px;
   }
   .main__headline--title--underline {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #BAE8E8 50%);
