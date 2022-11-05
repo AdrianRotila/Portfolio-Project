@@ -16,14 +16,14 @@ $color-white: white;
 .header { 
     background-color: $color-white;
     width: 100%;
-    height: 96px;
+    height: 6rem;
     position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
     &__name {
-        font-size: 20px;
+        font-size: 1.25rem;
         color: $text-color;
     
         &--last {
@@ -44,20 +44,20 @@ $color-white: white;
             
         &--item {
             text-decoration: none;
-            font-size: 18px;
+            font-size: 1.125rem;
             color: $color-secondary;
         }
     
         &--button{
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: bold;
-            width: 145px;
-            height: 45px;
-            left: 1429px;
+            width: 9rem;
+            height: 2.81rem;
+            left: 89rem;
             top: 47px;
             background: #BAE8E8;
             border: 1px solid $text-color;
-            border-radius: 10px;
+            border-radius: 2.93rem;
             cursor: pointer;
         }
     }
@@ -65,7 +65,7 @@ $color-white: white;
 
 /* Main Text Section */
 .main {
-    padding-top: 96px;
+    padding-top: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,21 +73,21 @@ $color-white: white;
 
     &__headline {
         min-width: 95%;
-        height: 862px;
+        height: 53.8rem;
         background-color: #F7FAFA;
-        gap: 40px;
+        gap: 2.5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         
         &--introduction {
-            font-size: 32px;
+            font-size: 2rem;
             color: $color-secondary;
         }
 
         &--title {
-            font-size: 64px;
+            font-size: 3rem;
             width: 65vw;
             color: $text-color;
             text-align: center;
@@ -98,31 +98,30 @@ $color-white: white;
         }
 
         &--button {
-            width: 321px;
-            height: 78px;
-            left: 699px;
-            top: 690px;
-            font-size: 18px;
+            width: 20rem;
+            height: 4.87rem;
+            left: 43.7rem;
+            top: 43.1rem;
+            font-size: 1.125rem;
             background: $color-primary;
             border: none;
             font-weight: bold;
             box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.74);
-            border-radius: 7px; 
+            border-radius: 0.43rem; 
         }
     }
 
 /* Skills Section */
     &__skills {
         width: 100%;
-        gap: 60px;
-        margin-top: 146px;
+        gap: 3.75rem;
+        margin-top: 9.12rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        flex-wrap: wrap;
 
         &--title {
-            font-size: 32px;
+            font-size: 2rem;
             color: $text-color;
             background: linear-gradient(180deg,rgba(255,255,255,0) 70%, #BAE8E8 50%);
             text-align: center;
@@ -130,20 +129,19 @@ $color-white: white;
 
         &--description {
             color: $color-secondary;
-            font-size: 16px;
-            width: 484px;
-            height: 52px;
+            font-size: 1rem;
+            width: 35%;
             line-height: 160%;
             font-weight: 400;    
             text-align: center;
         }
 
         &--projects {
-            margin-top: 200px;
-            margin-bottom: 110px;
+            margin-top: 12.5rem;
+            margin-bottom: 6.87rem;
             font-weight: bold;
-            font-size: 32px;
-            line-height: 39px;
+            font-size: 2rem;
+            line-height: 2.43rem;
             color: $text-color;
             background: linear-gradient(180deg,rgba(255,255,255,0) 70%, #BAE8E8 50%);
         }
@@ -151,7 +149,7 @@ $color-white: white;
 
     &__logos {
         width: 75%;
-        gap: 70px;
+        gap: 4.37rem;
         list-style: none;
         display: flex;
         flex-wrap: wrap;
@@ -159,8 +157,8 @@ $color-white: white;
 
         &--items {
             font-weight: 500;
-            font-size: 16px;
-            line-height: 19px;
+            font-size: 1rem;
+            line-height: 1.18rem;
             color: $color-secondary;
             display: flex;
             align-items: center;
@@ -173,7 +171,7 @@ $color-white: white;
 /* Projects Section */
     .project {
         width: 95%;
-        gap: 40px;
+        gap: 2.5rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center; 
@@ -182,49 +180,49 @@ $color-white: white;
         &__links {
             width: 50%;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 160%;
             display: flex;
             justify-content: space-between;
             
             &--item {
                 text-decoration: none;
-                font-size: 18px;
+                font-size: 1.12rem;
                 color: $text-color;
             }
         }
     
         &__card {
-            width: 440px;
-            height: 590px;
+            width: 27.5rem;
+            height: 36.87rem;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             
             &--image{
-                width: 440px;
-                height: 326px;
+                width: 27.5rem;
+                height: 20.37rem;
                 background-color: #E3F6F5
             }
             
             &--tech{
                 font-weight: 600;
-                font-size: 16px;
-                line-height: 19px;
+                font-size: 1rem;
+                line-height: 1.18rem;
                 color: #BAE8E8;
             }
 
             &--title {
-                margin-top: -25px;
+                margin-top: -1.56rem;
                 font-weight: 600;
-                font-size: 38px;
-                line-height: 46px;
+                font-size: 2.37rem;
+                line-height: 2.87rem;
                 color:$text-color;
             }
 
             &--description{
                 font-weight: 400;
-                font-size: 18px;
+                font-size: 1.12rem;
                 line-height: 160%;
                 color: $color-secondary;
             }
@@ -235,25 +233,25 @@ $color-white: white;
 /* About Section */
     .about {
         width: 80vw;
-        margin: 180px;
-        column-gap: 100px;
+        margin: 11.25rem;
+        column-gap: 6.25rem;
         display: flex;
         justify-content: center;
         align-items: center;
 
         &__text {
-            width: 757px;
+            width: 47.31rem;
 
             &--title {
                 font-weight: 600;
-                font-size: 48px;
-                line-height: 58px;
-                margin: 52px 0;
+                font-size: 3rem;
+                line-height: 3.62rem;
+                margin: 3.25rem 0;
             }
 
             &--description {
                 font-weight: 400;
-                font-size: 18px;
+                font-size: 1.12rem;
                 line-height: 180%;
                 color: $color-secondary;
             }
@@ -270,7 +268,7 @@ $color-white: white;
 .footer {
     background-color: $text-color;
     width: 100%;
-    height: 150px;
+    height: 9.35rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -278,19 +276,18 @@ $color-white: white;
     &--email {
         color: white;
         margin-left: 10vw;
-
     }
 
     &__list {
         margin-right: 10vw;
-        gap: 30px;
+        gap: 1.87rem;
         list-style: none;
         display: flex;
         flex-direction: row;
         
         &--link {
-            width: 45px;
-            height: 45px;
+            width: 2.81rem;
+            height: 2.81rem;
             border-radius: 50%;
             background-color: $color-primary;
             display: flex;
@@ -300,7 +297,7 @@ $color-white: white;
     }
 }
 
-@media only screen and(max-width: 1024px){
+@media only screen and(max-width: 768px){
 
     .about {
         flex-wrap: wrap;
@@ -339,21 +336,32 @@ $color-white: white;
     }
 
     .main__headline {
-        padding: 37px;
+        padding: 2.31rem;
         align-items: flex-start;
 
         &--introduction {
-            font-size: 20px;
+            font-size: 1.25rem;
         }
     
         &--title {
             text-align: left;
-            margin-bottom: 100px;
         }
 
         &--button {
             align-self: center;
         }
     }
+
+    .main__skills--description {
+        width: 70%;
+    }
+
+    
 }
 
+@media only screen and(max-width: 480px) {
+    .main__logos {
+        width: 90%;
+        gap: 3.75rem;
+    }
+}
