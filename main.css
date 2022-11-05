@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Navigation Bar */
@@ -11,7 +12,6 @@
   background-color: white;
   width: 100%;
   height: 6rem;
-  position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -43,17 +43,17 @@
   font-weight: bold;
   width: 9rem;
   height: 2.81rem;
-  left: 89rem;
-  top: 47px;
   background: #BAE8E8;
   border: 1px solid #272643;
-  border-radius: 2.93rem;
+  border-radius: 2rem;
   cursor: pointer;
+}
+.header__list--button:active {
+  transform: scale(0.98);
 }
 
 /* Main Text Section */
 .main {
-  padding-top: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,10 +61,10 @@
   /* Skills Section */
 }
 .main__headline {
-  min-width: 95%;
-  height: 53.8rem;
+  width: 95%;
+  height: 90vh;
   background-color: #F7FAFA;
-  gap: 2.5rem;
+  gap: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,6 +94,10 @@
   font-weight: bold;
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.74);
   border-radius: 0.43rem;
+  cursor: pointer;
+}
+.main__headline--button:active {
+  transform: scale(0.99);
 }
 .main__skills {
   width: 100%;
@@ -127,7 +131,6 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #BAE8E8 50%);
 }
 .main__logos {
-  width: 75%;
   gap: 4.37rem;
   list-style: none;
   display: flex;
@@ -147,7 +150,8 @@
 
 /* Projects Section */
 .project {
-  width: 95%;
+  max-width: 100vw;
+  width: 90%;
   gap: 2.5rem;
   display: flex;
   flex-wrap: wrap;
@@ -155,10 +159,9 @@
   align-items: center;
 }
 .project__links {
-  width: 50%;
+  width: 60%;
   font-weight: 600;
   font-size: 1rem;
-  line-height: 160%;
   display: flex;
   justify-content: space-between;
 }
@@ -173,9 +176,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: 0.2s ease-out;
 }
 .project__card--image {
-  width: 27.5rem;
+  max-width: 27.5rem;
+  width: 100%;
   height: 20.37rem;
   background-color: #E3F6F5;
 }
@@ -186,9 +191,8 @@
   color: #BAE8E8;
 }
 .project__card--title {
-  margin-top: -1.56rem;
   font-weight: 600;
-  font-size: 2.37rem;
+  font-size: 38px;
   line-height: 2.87rem;
   color: #272643;
 }
@@ -197,6 +201,11 @@
   font-size: 1.12rem;
   line-height: 160%;
   color: #8C9CB1;
+}
+
+.project__card:hover {
+  transform: scale(1.02);
+  transition: 0.2s ease-in;
 }
 
 /* About Section */
@@ -227,6 +236,11 @@
   border-radius: 50%;
   width: 35%;
   height: 35%;
+  transition: 0.3s ease-out;
+}
+.about__image:hover {
+  transform: scale(0.9);
+  transition: 0.3s ease-in;
 }
 
 .footer {
@@ -311,5 +325,9 @@
   .main__logos {
     width: 90%;
     gap: 3.75rem;
+  }
+
+  .main__headline {
+    width: 100%;
   }
 }
